@@ -1,0 +1,21 @@
+header {
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dest{
+  width: 50%;
+  text-align: center;
+  line-height: 6rem;
+    height: 6rem;
+}
+
+.img{
+  text-decoration: underline solid black;
+  width: 50%;
+}
