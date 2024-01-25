@@ -3,6 +3,9 @@
 import './App.css'
 import './reset.css'
 import { useState } from 'react'
+import { Header } from './Header'
+import { Description } from './Description'
+import { DogImage } from './DogImage'
 
 /**
  * @type {() => JSX.Element}
@@ -18,18 +21,10 @@ export const App = () => {
   }
   return (
     <div>
-      <header>
-        <h1>Dog App</h1>
-        <meta name="description" content="犬の画像を紹介するサイトです"></meta>
-      </header>
+      <Header />
       <div className="content">
-        <div className="dest">
-          <p>犬の画像を紹介するサイトです。</p>
-        </div>
-        <div className="img">
-          <img src={dogUrl} alt="dog"></img>
-          <button onClick={updateUrl}>更新</button>
-        </div>
+        <Description description="犬の画像を紹介するサイトです。" />
+        <DogImage imageUrl={dogUrl} updateUrl={updateUrl} />
       </div>
     </div>
   )
