@@ -17,7 +17,10 @@ export const App = () => {
           <p>犬の画像を紹介するサイトです。</p>
         </div>
         <div className="img">
-          <img src="https://images.dog.ceo/breeds/spaniel-brittany/n02101388_6057.jpg" alt="dog"></img>
+          <img
+            src="https://images.dog.ceo/breeds/spaniel-brittany/n02101388_6057.jpg"
+            alt="dog"
+          ></img>
         </div>
       </body>
     </div>
